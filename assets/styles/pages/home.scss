@@ -1,0 +1,289 @@
+body {
+  background-color: #f4f4f4;
+  color: #141414;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header.shadow{
+    background-color: #fff;
+    box-shadow: 4px 4px 4px rgb(15 54 55 / 10%);
+    transition: 0.5s ease;
+}
+
+header.shadow #search-icon{
+    color: #141414;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+  display: none;
+}
+.logo {
+  font-size: 1.2rem;
+  color: #141414;
+  font-weight: 700;
+}
+.logo span {
+  color: #ff1616;
+}
+.navbar {
+  display: flex;
+  column-gap: 2rem;
+}
+.navbar a {
+  color: #141414;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: #ff1616;
+  border-bottom: 3px solid #ff1616;
+}
+#search-icon {
+  font-size: 40px;
+  color: #f4f4f4;
+}
+.search-box {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+  border: 1px solid #f4f4f4;
+  border-radius: 0.5rem;
+  clip-path: circle(0% at 100% 0%);
+}
+.search-box.active {
+  clip-path: circle(144% at 100% 0%);
+}
+.search-box input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #141414;
+}
+.hero {
+max-width: 1300px;
+margin: auto;
+width: 100%;
+min-height: 640px;
+display: flex;
+align-items: center;
+  background: url("https://i.goopics.net/jp74hq.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+.hero-text{
+    padding-left: 140px;
+}
+.hero-text h1{
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.hero-text  span{
+    color:#ff1616;
+    font-weight: 600;
+}
+.hero-text p{
+    font-size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.5rem;
+}
+.btn-hero{
+    padding: 10px 22px;
+    background-color: #ff1616;
+    color: #f4f4f4;
+    font-weight: 400;
+}
+.btn-hero:hover{
+    background-color: #d90429;
+}
+.popcars .car-slider{
+    padding-bottom: 1rem;
+}
+.popcars .car-slider .car__box{
+    text-align: center;
+    width: 30%;
+   
+}
+.popcars .car-slider .car__box img{
+    width: 100%;
+   opacity: .5;
+    transform: scale(.8);
+}
+.popcars .car-slider .car__box .car__content{
+    transform: scale(0);
+    padding-top: 1rem;
+}
+.popcars .car-slider .swiper-slide-active img{
+    opacity: 1;
+    transform: scale(1);
+
+}
+.popcars .car-slider .swiper-slide-active .car__content{
+    transform: scale(1);
+}
+
+.popcars .car-slider .car__box .car__content h3{
+    font-size: 2rem;
+    color: #000;
+}
+.popcars .car-slider .car__box .car__content .car__box__price{
+    font-size: 1.2rem;
+    color: #ff1616;
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.popcars .car-slider .car__box .car__content .car__box__price span{
+    font-size: 1rem;
+    color: #141414;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.popcars .car-slider .car__box .car__content p{
+    font-size: 1rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #000;
+    color: #141414;
+}
+.popcars .car-slider .car__box .car__content p span{
+    color: #ff1616;
+    font-size: .8rem;
+    padding: 0.5rem;
+}
+.swiper-pagination-bullet-active{
+    background-color: #ff1616;
+}
+
+.cata__container{
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    grid-template-rows: 250px 300px; /* 2 rangées */
+    grid-gap: 15px; /* gouttière   */
+    gap:15px;
+}
+.featured-car-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    width: 40%;
+  }
+  .featured-car-card {
+    background: linear-gradient(to top, hsl(216, 75%, 97%), hsl(216, 38%, 95%));
+    border: 1px solid #000;
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
+  }
+  .featured-car-card .card-banner {
+    background: hsla(0, 0%, 0%, 0.2);
+    aspect-ratio: 3 / 2;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .featured-car-card .card-banner > img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .featured-car-card .card-content { padding: 20px 10px 10px; }
+  
+.featured-car-card .card-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .featured-car-card .card-title { width: calc(100% - 60px); }
+  
+  .featured-car-card .card-title > a {
+    color: inherit;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .featured-car-card .card-title > a:is(:hover, :focus) { color: #d90429; }
+
+  .featured-car-card .year {
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 3px 12px;
+    border: 2px dashed hsla(0, 93%, 53%, 0.4);
+    border-radius: 14px;
+  }
+  .featured-car-card .card-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .featured-car-card .card-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .featured-car-card .card-list-item .fa ,
+  .featured-car-card .card-list-item i{
+    font-size: 20px;
+    stroke-width: 38px;
+  }
+  .featured-car-card .card-item-text {
+    color: hsl(219, 21%, 39%);
+    font-size: 0.875rem;
+  }
+  
+  .featured-car-card .card-price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .featured-car-card .card-price {
+    font-size: 0.875rem;
+    color:  hsl(240, 22%, 25%);
+  }
+  
+  .featured-car-card .card-price strong {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-400);
+  }
+
+

@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    min-height:350px;
+    min-width: 350px;
+}
+/* custom scroll Bar*/
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: #020102;
+}
+section{
+    padding: 2rem 0 1rem;
+}
+
+img{
+    width: 100%;
+}
+.w-100{
+    width: 100%;
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading{
+  position: relative;
+    text-align: center;
+  align-content: center;
+}
+.heading span{
+    font-weight: 500;
+    color: #ff1616;
+}
+.heading p{
+    font-size: 0.938rem;
+    margin-bottom: 15px;
+}
+body{
+    height: 100%;
+}
+.z{
+    position: relative;
+    margin-top: 30px;
+}
+.esp{
+    margin-bottom: 60px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: #ff1616;
+    color: #f7f7f7; 
+    font-weight: 600;
+    padding: 2rem 0 1rem;
+}
+.footer span {
+    color:#020102;
+}
+
+.footer a{
+    color:#020102;
+}
+.footer a:hover{
+    color:#f7f7f7;
+}
+.terms .heading{
+    position: absolute;
+}
+.terms{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    height: 70%;
+    margin-top: 5%;
+    margin-bottom: 40px
+}
+.terms__content{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .terms .heading{
+        margin-top: 10rem;
+    }
+}
+@import "./pages/home.scss";

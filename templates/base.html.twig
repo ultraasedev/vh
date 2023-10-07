@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="index, follow">
+		
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Le N°1 en France de la LOA sur les berlines Prenium : Bienvenue chez VMAUTO. Berline, Break, Coupé, Cabriolet, SUV , Mercedes , Audi , Renault  et plus encore.">
+		<meta name="keywords" content="Mercedes-Benz Personenwagen">
+		<meta property="og:title" content=" VMAUTO | Le N°1 en France de la LOA sur les berlines Prenium  ">
+		<meta property="og:description" content="Le N°1 en France de la LOA sur les berlines Prenium   :  Bienvenue chez VMAUTO. Berline, Break, Coupé, Cabriolet, SUV , Mercedes , Audi , Renault  et plus encore.">
+		<meta property="og:url" content="https://www.vhauto.fr/">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://www.hebergeur-image.com/upload/79.95.87.123-65204af215321.png">
+		<meta property="og:image:width" content="470">
+		<meta property="og:image:height" content="246">
+		<title>
+			{% block title %}VM AUTO
+			{% endblock %}
+		</title>
 
-        {% block javascripts %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link
+		rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+		<link rel="icon" href="https://www.hebergeur-image.com/upload/79.95.87.123-65204af215321.png">
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+			{{ encore_entry_script_tags('scripts') }}
+
+		{% endblock %}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js" integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+	</body>
 </html>

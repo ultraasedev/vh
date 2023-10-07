@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VM AUTO | Vos Voitures Prenium a Portée de Click{% endblock %}
+
+
+{% block body %}
+{% include "./partials/header.html.twig" %}
+<!---HERO-->
+{% include "./components/_hero.html.twig" %}
+<!--POPULAR CAR-->
+{% include "./components/_popcar.html.twig" %}
+<!--CATALOGUE-->
+{% include "./components/_cata.html.twig" %}
+<!--FOOTER-->
+{% include "./partials/footer.html.twig" %}
+{% endblock %}
